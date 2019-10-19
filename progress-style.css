@@ -1,0 +1,85 @@
+/* progress board infos */
+div.progress-boards {
+}
+div.progress-board-contents {
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
+div.progress-board-info {
+}
+.progress-board-name {
+    border-width: 0 0 1px 20pt;
+    border-style: solid;
+    font-size:14pt;
+    line-height:20pt;
+    padding: 0 1em 0 1em;
+    margin:0;
+}
+p.progress-board-desc {
+    padding: 0.5em 1em 0.5em 1em;
+    margin:0;
+}
+p.progress-board-url {
+    text-align: right;
+    padding: 0 1em 0.5em 1em;
+    margin:0;
+}
+
+/* progress table */
+table.progress-table {
+    width: 100%;
+    border-collapse: separate;
+    border-radius: 5px;
+    border-color: #1b1e21;
+    border-top: solid 1px;
+    border-left: solid 1px;
+    border-spacing: 0;
+}
+table.progress-table td, table.progress-table th {
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    padding: 0.1em 1em;
+    background-color: #f8f8f0;
+}
+table.progress-table th {
+    background-color: #c8c0b4;
+}
+table.progress-table td.progress-table-td-first {
+    background-color: #f0ecdc;
+    width: 150px;
+}
+table.progress-table td.progress-table-td-update {
+    text-align: center;
+}
+table.progress-table th.progress-table-th-progress {
+    width: 170px;
+}
+table.progress-table th.progress-table-th-update {
+    width: 150px;
+}
+td div.items, td div.percentage {
+    display: block;
+    float: left;
+}
+td div.items {
+    width: 64px;
+    text-align: right;
+}
+td div.percentage {
+    width: 64px;
+    text-align: right;
+}
+
+/* correct for radius */
+table.progress-table th:first-child {
+    border-radius:5px 0 0 0;
+}
+table.progress-table th:last-child{
+    border-radius:0 5px 0 0;
+}
+table.progress-table td.progress-table-td-first.last-heading {
+    border-radius:0 0 0 5px;
+}
+table.progress-table tr:last-child td:last-child{
+    border-radius:0 0 5px 0;
+}

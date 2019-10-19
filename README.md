@@ -85,14 +85,23 @@ https://trello.com/b/PjmzAjhE/hogeland
 ## 動作仕様
 
 * ショートコードからfunction.phpパラメータ（ユーザ名 APIキー token URLs）を受け渡します。
-* progress.phpが、ボードのURLをもとに、TrelloのバッチAPIにて１つ以上のボードの情報を取得します
+* progress.phpが、ボードのURLをもとに、TrelloのBatch APIにて１つ以上のボードの情報を取得します
 * ボード情報に含まれるボードIDより、全てのリストの一覧を取得し、ボード情報に関連付けて設定します
 * ボード情報に含まれるボードIDより、全てのカードの一覧を取得し、ボード情報内のリストに関連付けて設定します
 * progerss.phpで取得した情報をもとに、progress-view.phpにてHTMLを構成し、Wordressに返却します
 
+## Trello APIの感想
+
+* TrelloのREST APIドキュメントは見切れてるし、無駄に派生系のAPIが多くてわかりづらい。  
+https://developers.trello.com/reference/#custom-fields
+* APIのレスポンスが正規化されているのは良いが、されすぎていて複合した情報を得るために数回APIを叩いてしまう。
+* APIの発行回数を抑えるためにはBatch APIを使う必要があるが、Batch APIの仕様に癖がある。  
+（APIのURLを区切るためには予めカンマを%2Cに置き換え、更にカンマ区切りのURLパラメータURLエンコードする必要がある。）
+
+
 ## 動作確認
 
-Wordpress 5.2.4
+Wordpress 5.2.4  
 PHP 7.1
 
 ## Lisence
@@ -105,5 +114,7 @@ PDS (Public Domain Software)
 ただし、元の著作者であるhogeizmは、  
 本ソフトウェア、および派生するソフトウェアについて一切の責任を負わず、なんら保証もしません。  
 （質問事項は twitter:@hogeizm まで）
-  
+
+## ひとこと
+
 Have a good your life!

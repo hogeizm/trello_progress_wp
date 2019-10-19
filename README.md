@@ -93,7 +93,7 @@ https://trello.com/b/PjmzAjhE/hogeland
 ## Trello APIの感想
 
 * TrelloのREST APIドキュメントは見切れてるし、無駄に派生系のAPIが多くてわかりづらい。  
-https://developers.trello.com/reference/#custom-fields
+https://developers.trello.com/reference
 * APIのレスポンスが正規化されているのは良いが、されすぎていて複合した情報を得るために数回APIを叩いてしまう。
 * APIの発行回数を抑えるためにはBatch APIを使う必要があるが、Batch APIの仕様に癖がある。  
 （APIのURLを区切るためには予めカンマを%2Cに置き換え、更にカンマ区切りのURLパラメータURLエンコードする必要がある。）

@@ -90,6 +90,11 @@ https://trello.com/b/PjmzAjhE/hogeland
 * ボード情報に含まれるボードIDより、全てのカードの一覧を取得し、ボード情報内のリストに関連付けて設定します
 * progerss.phpで取得した情報をもとに、progress-view.phpにてHTMLを構成し、Wordressに返却します
 
+## 動作確認
+
+Wordpress 5.2.4
+PHP 7.1
+
 ## Lisence
 
 PDS (Public Domain Software)  

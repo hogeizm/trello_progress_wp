@@ -93,6 +93,11 @@ https://trello.com/b/PjmzAjhE/hogeland
 * ボード情報に含まれるボードIDより、全てのカードの一覧を取得し、ボード情報内のリストに関連付けて設定します
 * progerss.phpで取得した情報をもとに、progress-view.phpにてHTMLを構成し、Wordressに返却します
 
+## 動作確認済みの環境
+
+Wordpress 5.2.4  
+PHP 7.1
+
 ## Trello APIの感想
 
 * TrelloのREST APIドキュメントは見切れてるし、無駄に派生系のAPIが多くてわかりづらい。  
@@ -100,12 +105,6 @@ https://developers.trello.com/reference
 * APIのレスポンスが正規化されているのは良いが、されすぎていて複合した情報を得るために数回APIを叩いてしまう。
 * APIの発行回数を抑えるためにはBatch APIを使う必要があるが、Batch APIの仕様に癖がある。  
 （APIのURLを区切るためには予めカンマを%2Cに置き換え、更にカンマ区切りのURLパラメータURLエンコードする必要がある。）
-
-
-## 動作確認
-
-Wordpress 5.2.4  
-PHP 7.1
 
 ## Lisence
 

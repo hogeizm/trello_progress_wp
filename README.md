@@ -3,7 +3,9 @@
 ## What's this?
 
 Wordpress向けに、Trello API呼び出して複数のボード内のリストとカードを取得し、進捗を表示するプログラムです。  
-ショートコードにて、現在のTrelloの状態から生成された進捗テーブル表示することができます。
+ショートコードにて、以下のように現在のTrelloの状態から生成された進捗テーブル表示することができます。
+![trello_progress_wp_img](https://user-images.githubusercontent.com/38904945/67152693-f367b180-f316-11e9-8c3d-540eca08a6d2.png)
+ボード名、ボード詳細、``shortUrl``、それとリストとカードから生成したテーブルで構成されます。
 
 ## [STEP1] Trello APIのキーの発行とtokenの取得
 
@@ -14,7 +16,7 @@ Trelloにログインした状態で以下のURLにアクセスし、Keyを発�
 
 https://trello.com/app-keyhttps://trello.com/app-key
 
-![APIキーの発行とtokenの取得](https://user-images.githubusercontent.com/38904945/67149463-70c6fe00-f2e6-11e9-8661-d62876c75f12.png)
+![APIキーの発行とtokenの取得](https://user-images.githubusercontent.com/38904945/67152704-62dda100-f317-11e9-9ecb-137b2de69441.png)
 
 ## [STEP2] Wordpressへ配置する
 
@@ -33,7 +35,7 @@ progress.php
 
 ### functon.phpへ追記する
 
-取得したfunction.phpの中身をすべてコピーし、既存の使用中のテーマのfunction.phpに追記(貼り付け)します。  
+取得したfunction.phpの中身をすべてコピーし、**あなたが使用中のテーマのfunction.phpに追記(貼り付け)**します。  
 そのまま配置するものではありません。
 
 ### progress-style.cssの適用
@@ -50,6 +52,7 @@ cssの適用については、Wordpressの「外観」>「カスタマイズ」�
 ## [STEP3] ショートコードで呼び出す
 
 ショートコードにて、以下の形式で呼び出します。
+入力としたボードの``shortUrl``の数だけ表が生成されます。
 
 ```
 [progress ユーザー名 APIキー トークン '1つ目のボードのshortUrl,2つ目のボードのshortUrl,...']
@@ -65,8 +68,8 @@ cssの適用については、Wordpressの「外観」>「カスタマイズ」�
 
 ### shortUrl
 
-ボードの``shortUrl``は、カンマ区切り(間にスペースは入れない)で指定してください。  
-ボードの``shortUrl``とは、Trelloのボードにアクセスした際に表示されるURLの、ボード名の前のスラッシュ以降を含まないURLを指します。  
+ボードの``shortUrl``は間にスペースは入れず、カンマ区切りで指定してください。  
+ボードの``shortUrl``とは、Trelloのボードにアクセスした際に表示されるURLの、**ボード名の前のスラッシュ以降を含まないURL**を指します。  
   
 例としては、以下のとおりです。  
 

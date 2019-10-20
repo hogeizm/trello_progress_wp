@@ -105,6 +105,7 @@ https://developers.trello.com/reference
 * APIのレスポンスが正規化されているのは良いが、されすぎていて複合した情報を得るために数回APIを発行する必要がある。
 * APIの発行回数を抑えるためにはBatch APIを使う必要があるが、Batch APIの仕様に癖がある。  
 （APIのURLを区切るためには予めカンマを%2Cに置き換え、更にカンマ区切りのURLパラメータURLエンコードする必要がある。）
+* 進捗は大事。ありがとうTrello。
 
 ## Lisence
 

@@ -57,5 +57,5 @@
         </table>
     </div>
     <?php endforeach; ?>
-    <p style="font-size:0.75em; text-align:right;">These tables made by Trello Pregress WP.</p>
+    <p style="font-size:0.75em; text-align:right;">These tables made by <a href="https://github.com/hogeizm/trello_progress_wp" target="trello_progress_wp">Trello Progress WP</a>.</p>
 </div>

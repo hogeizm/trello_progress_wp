@@ -14,7 +14,7 @@ Trelloにログインした状態で以下のURLにアクセスし、Keyを発�
 また、同ページのリンク（APIキーのすぐ下にあるリンク）からtokenを取得します。  
 これらはAPI発行時に毎回付与する必要がある情報です。  
 
-https://trello.com/app-keyhttps://trello.com/app-key
+https://trello.com/app-key
 
 ![APIキーの発行とtokenの取得](https://user-images.githubusercontent.com/38904945/67152704-62dda100-f317-11e9-9ecb-137b2de69441.png)
 
@@ -95,8 +95,8 @@ https://trello.com/b/PjmzAjhE/hogeland
 
 ## 動作確認済みの環境
 
-Wordpress 5.2.4  
-PHP 7.1
+Wordpress 5.6 
+PHP 7.4
 
 ## Trello APIの感想
 
